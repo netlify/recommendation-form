@@ -1,5 +1,33 @@
 {{ partial "header" . }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+<div class="ui" style="padding: 10px; max-width: 370px">
+  <h1>Enter your info to win</h1>
+
+  <form class="form" name="something" action="/thanks-for-signing-up" method="post">
+    <div class="input-group">
+      <input type="text" class="utility-input" placeholder="Email"></input>
+      <br />
+      <input type="text" class="utility-input" placeholder="GitHub Username"></input>
+      <br />
+      <input type="text" class="utility-input" placeholder="Twitter Handle"></input>
+      <br />
+      <br />
+      <select class="problem">
+        <option value="" disabled="" selected="">Select a Topic</option>
+        <option class="option" name="featureOption" value="Domain/DNS issue">Domain/DNS issue</option>
+        <option class="option" name="featureOption" value="SSL issue">SSL issue</option>
+        <option class="option" name="featureOption" value="Billing issue">Billing issue</option>
+        <option class="option" name="featureOption" value="Pricing">Pricing</option>
+        <option class="option" name="featureOption" value="Feature">Feature</option>
+        <option class="option" name="featureOption" value="Enterprise/ Reseller">Enterprise/ Reseller</option>
+        <option class="option" name="featureOption" value="Other">Other</option>
+      </select>
+
+      <br />
+      <br />
+      <button href="#" class="button-pop-primary">Submit</button>
+    </div>
+  </form>
+</div>
 
 {{ partial "footer" . }}
