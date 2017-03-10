@@ -1,1 +1,97 @@
-@import "imports/reset.css";
+body {
+  background: #EBF2F2;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  min-width: 90%;
+  max-width: 860px;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  max-width: 80%;
+  min-width: 30%;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  box-shadow: none;
+  border: none;
+  height: 36px;
+  background-color: #00AD9F;
+  color: #fff;
+  transition: background-color 0.1s ease-in-out;
+  outline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #009488;
+  }
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 120px;
+  max-width: 80%;
+}
+
+.form-container {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  justify-content: center;
+  text-align: center;
+}
+
+.disclosure {
+  color: #C3C3C3;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin: 8px;
+  text-align: left !important;
+}
+
+.boxed-input {
+  display: block;
+  justify-content: center;
+  width: 96%;
+  font-size: em(14);
+  /* text-align: center; */
+  background: #FFF;
+  border: 1px solid #C3C3C3;
+  border-radius: 8px;
+  padding: 8px;
+
+  &:active,
+  &:focus {
+    border: 1px solid #009488;
+  }
+}
+
+.text-box {
+  height: 60px;
+  vertical-align: text-top;
+}
+
+.light-shadow {
+  border-radius: 2px;
+  box-shadow: 0px 0.5px rgba(0,0,0,0.10);
+}
+
+.shadow {
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.10);
+}
+
+

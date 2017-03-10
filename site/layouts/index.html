@@ -1,18 +1,20 @@
 {{ partial "header" . }}
 
-<div class="ui" style="padding: 10px; max-width: 370px">
-  <h1>Enter your info to win</h1>
+<div class="ui container" style="padding: 10px; max-width: 370px">
+  <h1 class="title">Enter your info to win</h1>
 
-  <form class="form" name="something" action="/thanks-for-signing-up" method="post">
+  <form class="user-content-submission form" name="something" action="thank-you"
+    method="post" netlify>
     <div class="input-group">
-      <input type="text" class="utility-input" placeholder="Email"></input>
+      <input type="text" name="email" class="boxed-input light-shadow utility-input" placeholder="Email"
+      autofocus></input>
       <br />
-      <input type="text" class="utility-input" placeholder="GitHub Username"></input>
+      <input type="text" name="github" class="utility-input" placeholder="GitHub Username"></input>
       <br />
-      <input type="text" class="utility-input" placeholder="Twitter Handle"></input>
+      <input type="text" name="twitter" class="utility-input" placeholder="Twitter Handle"></input>
       <br />
       <br />
-      <select class="problem">
+      <select name="topic" class="problem">
         <option value="" disabled="" selected="">Select a Topic</option>
         <option class="option" name="featureOption" value="Domain/DNS issue">Domain/DNS issue</option>
         <option class="option" name="featureOption" value="SSL issue">SSL issue</option>
@@ -25,7 +27,7 @@
 
       <br />
       <br />
-      <button href="#" class="button-pop-primary">Submit</button>
+      <input type="submit" href="#" class="button-pop-primary"></input>
     </div>
   </form>
 </div>
