@@ -10,10 +10,6 @@ h1 {
   color: #333;
 }
 
-.problem {
-  width: 80% !important;
-}
-
 button {
   max-width: 80%;
   min-width: 30%;

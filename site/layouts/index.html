@@ -1,41 +1,39 @@
 {{ partial "header" . }}
 
-<div class="ui container" style="margin-left:auto; margin-right:auto; padding: 10px; max-width: 420px">
-  <h1 class="title">Enter your info to win</h1>
+<div class="container">
+  <h1 class="title">Have something to tweet?</h1>
 
-  <div class="card-ui">
-    <form class="user-content-submission form" name="something" action="thank-you"
+  <div class="form-container shadow">
+    <form class="user-content-submission form" name="tweet suggestions" action="thank-you"
       method="post" netlify>
       <div class="input-group">
-        <input type="text" name="name" class="boxed-input light-shadow
-                                       utility-input" placeholder="Name"
-        autofocus required></input>
-        <br />
-        <input type="text" name="email" class="boxed-input light-shadow utility-input" placeholder="Email"
-        autofocus required></input>
-        <br />
-        <input type="text" name="github" class="utility-input"
-        placeholder="GitHub Username" required></input>
-        <br />
-        <input type="text" name="twitter" class="utility-input"
-        placeholder="Twitter Handle" required></input>
+        <label>Is this a new tweet, a retweet, or a quoted tweet?</label>
         <br />
         <br />
-        <textarea style="min-width: 285px;min-height: 150px" class="boxed-input text-box light-shadow utility-input" type="text" placeholder="What do you use for Continuous deployments today?" name="notes"></textarea>
-        <br />
-        <label>Have you heard about the JAMstack?</label>
-        <br />
-        <br />
-        <select name="topic" style="max-with:100px" class="problem" required>
+        <select name="topic" style="width:100%" class="problem" required>
           <option value="" disabled="" selected=""></option>
-          <option class="option" name="featureOption" value="yes">Yes</option>
-          <option class="option" name="featureOption" value="no">No</option>
+          <option class="option" name="type" value="new">New Tweet</option>
+          <option class="option" name="type" value="retweet">Retweet</option>
+          <option class="option" name="type" value="retweet">Quote</option>
         </select>
         <br />
         <br />
-        <input type="submit" href="#" class="button-pop-primary"></input>
+        <input type="text" name="submittedby" class="boxed-input light-shadow utility-input" placeholder="Who is submitting this?" autofocus required></input>
+        <br />
+        <textarea style="min-width: 285px;min-height: 100px" class="boxed-input
+          text-box light-shadow utility-input" type="text"
+                                               name="tweet" placeholder="What do you want tweeted?">
+        </textarea>
+        <br />
+        <p class="disclosure">
+          Your submission will be added to the buffer queue. If this is more
+          timely consider checking 1pass for the <a href="https://buffer.com/app/profile/52c701470a0e32ca48000002/buffer/queue/list">buffer</a> login to bypass the
+          queue.
+        </p>
+        <button>Send</button>
       </div>
     </form>
+    <div class="shadow"></div>
   </div>
 </div>
 
